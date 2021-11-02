@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0px 20px 0px;
+    background-color: darkslategrey;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: darkslategrey;
+    padding: 20px 20px 20px 70px;
+    background-color: lightblue;
+    
+}
+
+header a {
+    color: lightblue;
+    text-decoration: none;
+    margin: 30px;
+    font-weight: lighter;
+    font-size: 1.4vw;
+    border-bottom: 3px solid lightblue;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header nav {
+    margin: 30px 0px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url("../images/off-road.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 100%;
+    padding: 250px;
+}
+
+.hero h3 {
+    font-weight: bold;
+    font-size: 26px;
+    color: darkslategrey;
+    padding: 20px;
+    background-color: lightblue;
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 300px;
+}
+
+.about-me, 
+.work {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 20px 0px 20px 0px;
+}
+
+.about-me h2,
+.work h2 {
+    font-weight: bold;
+    font-size: 36px;
+    color: darkslategrey;
+    padding: 20px;
+}
+
+.about-me-content {
+    border-left: 3px solid lightblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: darkslategrey;
+    padding: 20px;
+    margin-left: 250px; 
+    margin-top: -100px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-surf-report {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-left: 3px solid lightblue;
+    padding: 20px;
+    margin-left: 250px; 
+    margin-top: -100px;
+}
+
+.work-surf-report img {
+    border: 5px solid black;
+    max-width: 100%;
+}
+
+.work-surf-report div {
+    font-weight: bold;
+    font-size: 22px;
+    color: darkslategrey;
+    padding: 20px;
+    background-color: lightblue;
+    position: absolute;
+    margin-top: 300px;
+}
+
+.work-surf-report div p {
+    font-weight: lighter;
+    font-size: 18px;
+    padding: 5px;
+}
