@@ -28,10 +28,11 @@ header h1 {
     color: darkslategrey;
     padding: 20px 20px 20px 70px;
     background-color: lightblue;
-    
+
 }
 
-header a {
+header a,
+.contact-content a {
     color: lightblue;
     text-decoration: none;
     margin: 30px;
@@ -40,7 +41,8 @@ header a {
     border-bottom: 3px solid lightblue;
 }
 
-header nav ul {
+header nav ul,
+.contact-content ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -74,8 +76,10 @@ header nav {
     margin-left: 300px;
 }
 
-.about-me, 
-.work {
+.about-me,
+.work,
+.contact-me,
+.resume {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -84,11 +88,18 @@ header nav {
 }
 
 .about-me h2,
-.work h2 {
+.work h2,
+.contact-me h2,
+.resume h2 {
     font-weight: bold;
     font-size: 36px;
     color: darkslategrey;
     padding: 20px;
+}
+
+.contact-content a {
+    color: darkslategrey;
+    border-bottom: 3px solid darkslategrey;
 }
 
 .about-me-content {
@@ -98,7 +109,7 @@ header nav {
     justify-content: space-between;
     color: darkslategrey;
     padding: 20px;
-    margin-left: 250px; 
+    margin-left: 250px;
     margin-top: -100px;
 }
 
@@ -114,7 +125,7 @@ header nav {
     flex-wrap: wrap;
     border-left: 3px solid lightblue;
     padding: 20px;
-    margin-left: 250px; 
+    margin-left: 250px;
     margin-top: -100px;
 }
 
@@ -136,5 +147,366 @@ header nav {
 .work-surf-report div p {
     font-weight: lighter;
     font-size: 18px;
-    padding: 5px;
 }
+
+.side-projects {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 250px;
+    border-left: 3px solid lightblue;
+    position: relative;
+}
+
+.side-project {
+    flex: 0 50%;
+    padding: 20px;
+    position: relative;
+}
+
+.side-project img {
+    width: 100%;
+    border: 5px solid black;
+}
+
+.project-content {
+    font-weight: bold;
+    font-size: 22px;
+    color: darkslategrey;
+    padding: 20px;
+    background-color: lightblue;
+    position: absolute;
+    margin-top: -120px;
+}
+
+.project-content p {
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.contact-content {
+    border-left: 3px solid lightblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: darkslategrey;
+    padding: 25px 100px 0px 100px;
+}
+
+.resume a {
+    color: darkslategrey;
+}
+
+.resume-content {
+    border-left: 3px solid lightblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: darkslategrey;
+    padding: 30px 375px 0px 395px;
+}
+
+.work img:hover {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    .hero {
+      width: 100%;
+      position: relative;
+      padding: 0px;
+      padding-left: 0px;
+    }
+  
+    .hero h3 {
+        font-weight: bold;
+        font-size: 26px;
+        color: darkslategrey;
+        padding: 20px;
+        background-color: lightblue;
+        position: absolute;
+        margin-top: 140px;
+        margin-left: 300px;
+    }
+    
+    .about-me,
+    .work,
+    .contact-me,
+    .resume {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex: 1;
+        padding: 20px 0px 20px 0px;
+    }
+    
+    .about-me h2,
+    .work h2,
+    .contact-me h2,
+    .resume h2 {
+        font-weight: bold;
+        font-size: 36px;
+        color: darkslategrey;
+        padding: 20px;
+    }
+    
+    .contact-content a {
+        color: darkslategrey;
+        border-bottom: 3px solid darkslategrey;
+    }
+    
+    .about-me-content {
+        border-left: 3px solid lightblue;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        color: darkslategrey;
+        padding: 20px;
+        margin-left: 250px;
+        margin-top: -100px;
+    }
+    
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .work-surf-report {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-left: 3px solid lightblue;
+        padding: 20px;
+        margin-left: 250px;
+        margin-top: -100px;
+    }
+    
+    .work-surf-report img {
+        border: 5px solid black;
+        max-width: 100%;
+    }
+    
+    .work-surf-report div {
+        font-weight: bold;
+        font-size: 22px;
+        color: darkslategrey;
+        padding: 20px;
+        background-color: lightblue;
+        position: absolute;
+        margin-top: 300px;
+    }
+    
+    .work-surf-report div p {
+        font-weight: lighter;
+        font-size: 18px;
+    }
+    
+    .side-projects {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 250px;
+        border-left: 3px solid lightblue;
+        position: relative;
+    }
+    
+    .side-project {
+        flex: 0 50%;
+        padding: 20px;
+        position: relative;
+    }
+    
+    .project-content {
+        font-size: 1.5vw;
+    }
+   
+    .contact-content a {
+        margin: 10px;
+        font-size: 1.5vw;
+        padding: 5px 5px;
+    }
+
+    .contact-content {
+        padding: 1.5vw;
+        padding: 5px 5px;
+    }
+    
+    .resume-content {
+        margin: 15px;
+        padding: 15px 50px;
+    }
+    .resume-content a {
+        font-size: 2vw;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 3vw;
+    }
+  
+    .hero {
+      width: 90%;
+      position: relative;
+      padding: 350px;
+      padding-left: 27px;
+    }
+  
+    .hero h3 {
+        font-weight: bold;
+        font-size: 18px;
+        color: darkslategrey;
+        padding: 0px;
+        background-color: lightblue;
+        position: absolute;
+        margin-top: 150px;
+        margin-left: 200px;
+    }
+    
+    .about-me,
+    .work,
+    .contact-me,
+    .resume {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex: 1;
+        padding: 20px 0px 20px 0px;
+    }
+    
+    .about-me h2,
+    .work h2,
+    .contact-me h2,
+    .resume h2 {
+        font-weight: bold;
+        font-size: 26px;
+        color: darkslategrey;
+        padding: 5px;
+    }
+    
+    .contact-content a {
+        color: darkslategrey;
+        border-bottom: 3px solid darkslategrey;
+    }
+    
+    .about-me-content {
+        border-left: 3px solid lightblue;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        color: darkslategrey;
+        padding: 10px;
+        margin-left: 150px;
+        margin-top: -20px;
+    }
+    
+    
+    
+    .work-surf-report {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-left: 3px solid lightblue;
+        padding: 20px;
+        margin-left: 150px;
+        margin-top: -50px;
+    }
+    
+    .work-surf-report img {
+        border: 5px solid black;
+        max-width: 100%;
+    }
+    
+    .work-surf-report div {
+        font-weight: bold;
+        font-size: 10px;
+        color: darkslategrey;
+        padding: 0px;
+        background-color: lightblue;
+        position: absolute;
+        margin-top: 10px;
+    }
+    
+    .work-surf-report div p {
+        font-weight: lighter;
+        font-size: 8px;
+    }
+    
+    .side-projects {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 150px;
+        border-left: 3px solid lightblue;
+        position: relative;
+    }
+    
+    .side-project {
+        flex: 0 100%;
+        padding: 10px;
+        position: relative;
+    }
+    
+    .project-content {
+        font-size: 8px;
+    }
+   
+    .contact-content a {
+        margin: 0px;
+        font-size: 1.7vw;
+        padding: 1px 1px;
+    }
+
+    .contact-content {
+        padding: 0px;
+    }
+    
+    .resume-content {
+        margin: 2px;
+        padding: 2px 2px;
+    }
+    .resume-content a {
+        font-size: 1.7vw;
+    }
+  }
