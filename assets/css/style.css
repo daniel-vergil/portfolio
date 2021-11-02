@@ -28,7 +28,7 @@ header h1 {
     color: darkslategrey;
     padding: 20px 20px 20px 70px;
     background-color: lightblue;
-    
+
 }
 
 header a {
@@ -74,7 +74,7 @@ header nav {
     margin-left: 300px;
 }
 
-.about-me, 
+.about-me,
 .work {
     display: flex;
     justify-content: space-between;
@@ -98,7 +98,7 @@ header nav {
     justify-content: space-between;
     color: darkslategrey;
     padding: 20px;
-    margin-left: 250px; 
+    margin-left: 250px;
     margin-top: -100px;
 }
 
@@ -114,7 +114,7 @@ header nav {
     flex-wrap: wrap;
     border-left: 3px solid lightblue;
     padding: 20px;
-    margin-left: 250px; 
+    margin-left: 250px;
     margin-top: -100px;
 }
 
@@ -136,5 +136,40 @@ header nav {
 .work-surf-report div p {
     font-weight: lighter;
     font-size: 18px;
-    padding: 5px;
+}
+
+.side-projects {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 250px;
+    border-left: 3px solid lightblue;
+    position: relative;
+}
+
+.side-project {
+    flex: 0 50%;
+    padding: 20px;
+    position: relative;
+}
+
+.side-project img {
+    width: 100%;
+    border: 5px solid black;
+}
+
+.project-content {
+    font-weight: bold;
+    font-size: 22px;
+    color: darkslategrey;
+    padding: 20px;
+    background-color: lightblue;
+    position: absolute;
+    margin-top: -120px;
+}
+
+.project-content p {
+    font-weight: lighter;
+    font-size: 18px;
 }
